@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Very-paleblue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: var(--Paleblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 109vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 335px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.musicgirl img {
+    width: 335px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.matter {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.4rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.description p {
+    color: var(--Desaturated-blue);
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.plan {
+    display: flex;
+    background-color: var(--Very-paleblue);
+    border-radius: 0.625rem;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.plan .annual {
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.plan p span {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.plan a {
+    margin: auto;
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--Brightblue);
+    font-weight: 700;
+}
+
+.plan a:active {
+    cursor: pointer;
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.btn {
+    background-color: var(--Brightblue);
+    padding: 1rem;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.625rem;
+    width: 100%;
+    height: auto;
+    box-shadow: 0.5rem 0.8rem 1rem hsl(225, 32%, 79%);
+    margin-bottom: 1.4rem;
+}
+
+.btn:active {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.Cancel {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.Cancel:active {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: url("./images/pattern-background-desktop.svg");
+        background-repeat: repeat-x;
+        background-position-y: top;
+        background-color: var(--Paleblue);
+    }
+}
