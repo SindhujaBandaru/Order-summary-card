@@ -26,18 +26,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 109vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
 
-main {
+article{
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 335px;
+    max-width: 400px;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ main {
 }
 
 .musicgirl img {
-    width: 335px;
+    width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -91,7 +91,7 @@ h1 {
 
 .plan a {
     margin: auto;
-    margin-left: 1.5rem;
+    margin-left:5rem;
     font-size: 0.8rem;
     color: var(--Brightblue);
     font-weight: 700;
@@ -116,10 +116,11 @@ h1 {
     margin-bottom: 1.4rem;
 }
 
-.btn:active {
-    opacity: 0.8;
+.btn:hover {
+    background-color: var(--Desaturated-blue);
     cursor: pointer;
 }
+
 
 .Cancel {
     color: var(--Desaturated-blue);
